@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useRef } from "react";
+import "./App.css";
+import Form from "./components/Form/Form";
+import Header from "./components/Header/Header";
+import Compare from "./components/Compare/Compare";
 
 function App() {
+    const [leftText, setLeftText] = useState("");
+  const [rightText, setRightText] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Form
+        leftText={leftText}
+        rightText={rightText}
+        setLeftText={setLeftText}
+        setRightText={setRightText}
+      />
+      <Compare 
+        leftText={leftText}
+        rightText={rightText}
+      />
     </div>
   );
 }
