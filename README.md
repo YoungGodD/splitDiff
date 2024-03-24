@@ -11,7 +11,7 @@ Use [node.js](https://nodejs.org/en/download) to install SplitDiff.
 ```bash
 yarn install
 # or
-npm install
+npm install --force
 ```
 This will install all the necessary dependencies to run.
 
