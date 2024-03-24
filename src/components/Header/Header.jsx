@@ -5,7 +5,7 @@ import style from './Header.module.css'
 function Header() {
   return (
     <div className={style.header}>
-        <span>SplitDiff</span>
+        <a href='/'>SplitDiff</a>
     </div>
   )
 }

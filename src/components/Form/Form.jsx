@@ -43,13 +43,13 @@ function Form({leftText, rightText, setLeftText, setRightText}) {
           ref={leftTextRef}
           name="leftCode"
           value={leftText}
-          placeholder="Введите текст или выберите файл..."
+          placeholder="Enter text or select a file..."
           onChange={(e) => handleleftTextChange(e)}
           variant="outlined"
         /> 
         <label className={style["input-file"]}>
           <input type="file" onChange={(e) => setLeftTextFile(e)} />
-          <span className={style["input-file-btn"]}>Выберите файл</span>           
+          <span className={style["input-file-btn"]}>Select a file</span>           
         </label>
       </div>
       <div className={style['text-container']}>
@@ -59,13 +59,13 @@ function Form({leftText, rightText, setLeftText, setRightText}) {
           ref={rightTextRef}
           name="rightCode"
           value={rightText}
-          placeholder="Введите текст или выберите файл..."
+          placeholder="Enter text or select a file..."
           onChange={(e) => handleRightTextChange(e)}
           variant="outlined"
         />
         <label className={style["input-file"]}>
           <input type="file" onChange={(e) => setRightTextFile(e)} />
-          <span className={style["input-file-btn"]}>Выберите файл</span>           
+          <span className={style["input-file-btn"]}>Select a file</span>           
         </label>
       </div>
     </div>
